@@ -1,7 +1,8 @@
 #!/bin/sh -e
-# SDL2_IMAGE-2.0.0.sh by unknown (Updated by Spork Schivago)
+# SDL2_IMAGE-2.0.1.sh by unknown (Updated by Spork Schivago)
+# (2.0.1 by redcyclone)
 
-SDL2_IMAGE=SDL2_image-2.0.0
+SDL2_IMAGE=SDL2_image-2.0.1
 
 ## Download the source code.
 if [ ! -f ${SDL2_IMAGE}.tar.gz ]; then wget --continue http://www.libsdl.org/projects/SDL_image/release/${SDL2_IMAGE}.tar.gz; fi

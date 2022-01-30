@@ -1,13 +1,14 @@
 #!/bin/sh -e
-# SDL2_ttf-2.0.12.sh by unknown (Updated by Spork Schivago)
+# SDL2_ttf-2.0.13.sh by unknown (Updated by Spork Schivago)
+# (2.0.13 by redcyclone)
 
-SDL2_TTF=SDL2_ttf-2.0.12
+SDL2_TTF=SDL2_ttf-2.0.13
 
 ## Download the source code.
 if [ ! -f ${SDL2_TTF}.tar.gz ]; then wget --continue http://www.libsdl.org/projects/SDL_ttf/release/${SDL2_TTF}.tar.gz; fi
 
 ## Unpack the source code.
-rm -Rf ${SDL2_TTF} && tar -xvzf ${SDL2_TTF}.tar.gz && cd ${SDL2_TTF}
+rm -Rf ${SDL2_TTF} && tar -xvf ${SDL2_TTF}.tar.gz && cd ${SDL2_TTF}
 
 ## Patch the source code if a patch exists.
 if [ -f ../../patches/${SDL2_TTF}.patch ]; then

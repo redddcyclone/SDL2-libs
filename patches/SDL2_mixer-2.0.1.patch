@@ -1,6 +1,6 @@
-diff -burN SDL2_mixer-2.0.0/music_mod.c SDL2_mixer-2.0.0-PS3/music_mod.c
---- SDL2_mixer-2.0.0/music_mod.c	2013-08-10 13:39:58.000000000 -0400
-+++ SDL2_mixer-2.0.0-PS3/music_mod.c	2013-12-10 21:11:30.738729122 -0500
+diff -burN SDL2_mixer-2.0.1/music_mod.c SDL2_mixer-2.0.1-PS3/music_mod.c
+--- SDL2_mixer-2.0.1/music_mod.c	2013-08-10 13:39:58.000000000 -0400
++++ SDL2_mixer-2.0.1-PS3/music_mod.c	2022-01-18 23:00:00.000000000 -0300
 @@ -44,6 +44,8 @@
  
  static int music_swap8;
