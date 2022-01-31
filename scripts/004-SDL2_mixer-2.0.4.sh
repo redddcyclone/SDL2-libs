@@ -1,8 +1,8 @@
 #!/bin/sh -e
-# SDL2_MIXER-2.0.1.sh by unknown (Updated by Spork Schivago)
-# (2.0.1 by redcyclone)
+# SDL2_MIXER-2.0.0.sh by unknown (Updated by Spork Schivago)
+# (2.0.4 by redcyclone)
 
-SDL2_MIXER=SDL2_mixer-2.0.1
+SDL2_MIXER=SDL2_mixer-2.0.4
 LIBMIKMOD_CONFIG="$PS3DEV/portlibs/ppu/bin/libmikmod-config"
 export LIBMIKMOD_CONFIG
 
@@ -31,9 +31,7 @@ LDFLAGS="-L${PS3DEV}/portlibs/ppu/lib" \
 	--disable-shared \
 	--disable-music-cmd \
 	--disable-music-mod-modplug \
-	--disable-music-midi-fluidsynth \
-	--disable-music-ogg-shared \
-	--disable-music-mp3-smpeg \
+	--disable-music-mp3-mpg123 \
 	--enable-music-mp3-mad-gpl \
 	--enable-music-mod-mikmod
 

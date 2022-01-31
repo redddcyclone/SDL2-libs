@@ -1,0 +1,13 @@
+diff -burN SDL2_ttf-2.0.12/Makefile.in SDL2_ttf-2.0.12-PS3/Makefile.in
+--- SDL2_ttf-2.0.12/Makefile.in	2013-08-10 13:42:09.000000000 -0400
++++ SDL2_ttf-2.0.12-PS3/Makefile.in	2022-01-18 23:00:00.000000000 -0300
+@@ -55,7 +55,7 @@
+ POST_UNINSTALL = :
+ build_triplet = @build@
+ host_triplet = @host@
+ @USE_VERSION_RC_FALSE@libSDL2_ttf_la_DEPENDENCIES =
+-noinst_PROGRAMS = showfont$(EXEEXT) glfont$(EXEEXT)
++noinst_PROGRAMS =
+ subdir = .
+ DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
+ 	$(top_srcdir)/configure $(am__configure_deps) \

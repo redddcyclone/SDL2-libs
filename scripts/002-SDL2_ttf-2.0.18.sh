@@ -1,8 +1,8 @@
 #!/bin/sh -e
-# SDL2_ttf-2.0.13.sh by unknown (Updated by Spork Schivago)
-# (2.0.13 by redcyclone)
+# SDL2_ttf-2.0.12.sh by unknown (Updated by Spork Schivago)
+# (2.0.18 by redcyclone)
 
-SDL2_TTF=SDL2_ttf-2.0.13
+SDL2_TTF=SDL2_ttf-2.0.18
 
 ## Download the source code.
 if [ ! -f ${SDL2_TTF}.tar.gz ]; then wget --continue http://www.libsdl.org/projects/SDL_ttf/release/${SDL2_TTF}.tar.gz; fi
@@ -25,9 +25,10 @@ CFLAGS="-I${PSL1GHT}/ppu/include/SDL -I${PS3DEV}/portlibs/ppu/include/ -I${PS3DE
 LDFLAGS="-L${PSL1GHT}/ppu/lib -L${PS3DEV}/portlibs/ppu/lib -lrt -llv2" \
 PKG_CONFIG_PATH="${PS3DEV}/portlibs/ppu/lib/pkgconfig" \
 ../configure --prefix="${PS3DEV}/portlibs/ppu" --host=powerpc64-ps3-elf \
-	--with-freetype-exec-prefix="${PS3DEV}/portlibs/ppu" \
 	--with-sdl-exec-prefix="${PS3DEV}/portlibs/ppu" \
 	--without-x \
+	--disable-shared \
+	--disable-harfbuzz \
 	--disable-sdltest
 
 ## Compile and install.

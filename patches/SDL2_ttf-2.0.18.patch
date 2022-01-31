@@ -1,0 +1,11 @@
+--- SDL2_ttf-2.0.18/Makefile.in	2022-01-11 16:21:39.000000000 -0300
++++ SDL2_ttf-2.0.18-PS3/Makefile.in	2022-01-31 16:07:22.054832400 -0300
+@@ -93,7 +93,7 @@
+ host_triplet = @host@
+ @USE_VERSION_RC_FALSE@libSDL2_ttf_la_DEPENDENCIES =  \
+ @USE_VERSION_RC_FALSE@	$(am__DEPENDENCIES_1)
+-noinst_PROGRAMS = showfont$(EXEEXT) glfont$(EXEEXT)
++noinst_PROGRAMS =
+ subdir = .
+ ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
+ am__aclocal_m4_deps =  \
